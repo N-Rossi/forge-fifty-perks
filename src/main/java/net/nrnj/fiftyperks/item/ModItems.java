@@ -12,6 +12,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> EMPTY_PERK = ITEMS.register("empty_perk",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> VOLTAGE_VIAL_PERK = ITEMS.register("voltage_vial_perk", () -> new Item(new Item.Properties().food(ModFoods.VOLTAGE_VIAL_PERK)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
