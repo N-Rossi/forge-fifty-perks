@@ -3,12 +3,12 @@ package net.nrnj.fiftyperks.item;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrnj.fiftyperks.FiftyPerksMod;
+import net.nrnj.fiftyperks.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -19,6 +19,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.fiftyperks_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.EMPTY_PERK.get());
+                        pOutput.accept(ModBlocks.TEST_BLOCK.get());
                     })
                     .build());
 

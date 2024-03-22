@@ -14,6 +14,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.nrnj.fiftyperks.block.ModBlocks;
 import net.nrnj.fiftyperks.item.ModCreativeModeTabs;
 import net.nrnj.fiftyperks.item.ModItems;
 import org.slf4j.Logger;
@@ -33,7 +34,9 @@ public class FiftyPerksMod
 
         modEventBus.addListener(this::commonSetup);
 
+        /** Register */
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 

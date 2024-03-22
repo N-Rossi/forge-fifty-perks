@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "fiftyperks:block/test_block"
+    }
+  }
+}
