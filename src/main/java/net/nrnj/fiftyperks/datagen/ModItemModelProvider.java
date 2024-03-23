@@ -17,8 +17,13 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        // Perk Items
         simpleItem(ModItems.EMPTY_PERK);
         simpleItem(ModItems.VOLTAGE_VIAL_PERK);
+
+        // Element 115 Items
+        simpleItem(ModItems.RAW_ELEMENT_115);
+        simpleItem(ModItems.ELEMENT_115_CRYSTAL);
     }
 
     /**

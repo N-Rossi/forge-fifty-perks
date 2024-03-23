@@ -25,6 +25,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLOCK_OF_ELEMENT_115 = registerBlock("block_of_element_115",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).sound(SoundType.AMETHYST)));
 
+    public static final RegistryObject<Block> ELEMENT_115_ORE = registerBlock("element_115_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE)));
+
+    public static final RegistryObject<Block> DEEPSLATE_ELEMENT_115_ORE = registerBlock("deepslate_element_115_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_GOLD_ORE)));
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

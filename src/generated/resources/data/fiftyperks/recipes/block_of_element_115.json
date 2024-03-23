@@ -3,12 +3,12 @@
   "category": "misc",
   "key": {
     "X": {
-      "item": "minecraft:gold_ingot"
+      "item": "fiftyperks:element_115_crystal"
     }
   },
   "pattern": [
     "XXX",
-    "X X",
+    "XXX",
     "XXX"
   ],
   "result": {

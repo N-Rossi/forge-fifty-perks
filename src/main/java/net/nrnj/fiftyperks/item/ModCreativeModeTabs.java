@@ -19,8 +19,13 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.fiftyperks_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.EMPTY_PERK.get());
-                        pOutput.accept(ModBlocks.TEST_BLOCK.get());
                         pOutput.accept(ModItems.VOLTAGE_VIAL_PERK.get());
+                        pOutput.accept(ModItems.RAW_ELEMENT_115.get());
+                        pOutput.accept(ModItems.ELEMENT_115_CRYSTAL.get());
+
+                        pOutput.accept(ModBlocks.TEST_BLOCK.get());
+                        pOutput.accept(ModBlocks.ELEMENT_115_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_ELEMENT_115_ORE.get());
                         pOutput.accept(ModBlocks.BLOCK_OF_ELEMENT_115.get());
                     })
                     .build());

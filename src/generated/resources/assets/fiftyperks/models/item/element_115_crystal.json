@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fiftyperks:item/element_115_crystal"
+  }
+}

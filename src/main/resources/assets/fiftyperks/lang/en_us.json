@@ -1,9 +1,13 @@
 {
   "item.fiftyperks.empty_perk": "Empty Perk Bottle",
   "item.fiftyperks.voltage_vial_perk": "Voltage Vial Perk",
+  "item.fiftyperks.raw_element_115": "Raw Element 115",
+  "item.fiftyperks.element_115_crystal": "Element 115 Crystal",
 
   "block.fiftyperks.test_block": "Test Block",
   "block.fiftyperks.block_of_element_115": "Block Of Element 115",
+  "block.fiftyperks.element_115_ore": "Element 115 Ore",
+  "block.fiftyperks.deepslate_element_115_ore": "Deepslate Element 115 Ore",
 
   "creativetab.fiftyperks_tab": "Fifty Perks Mod Tab"
 }
