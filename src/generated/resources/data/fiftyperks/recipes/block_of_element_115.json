@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X X",
+    "XXX"
+  ],
+  "result": {
+    "item": "fiftyperks:block_of_element_115"
+  },
+  "show_notification": true
+}

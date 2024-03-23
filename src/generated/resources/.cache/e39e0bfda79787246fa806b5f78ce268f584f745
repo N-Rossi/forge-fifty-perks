@@ -1,0 +1,3 @@
+// 1.20.1	2024-03-23T15:29:14.3691977	Tags for minecraft:block mod id fiftyperks
+4727be7038e3c7dddcbd79a849edf04e1460eaca data/minecraft/tags/blocks/mineable/pickaxe.json
+4a1927ec35c030db35fc117e51a5220c82a5da30 data/minecraft/tags/blocks/needs_iron_tool.json

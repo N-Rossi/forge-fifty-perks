@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.EMPTY_PERK.get());
                         pOutput.accept(ModBlocks.TEST_BLOCK.get());
                         pOutput.accept(ModItems.VOLTAGE_VIAL_PERK.get());
+                        pOutput.accept(ModBlocks.BLOCK_OF_ELEMENT_115.get());
                     })
                     .build());
 

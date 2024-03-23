@@ -22,6 +22,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> TEST_BLOCK = registerBlock("test_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.BONE_BLOCK)));
 
+    public static final RegistryObject<Block> BLOCK_OF_ELEMENT_115 = registerBlock("block_of_element_115",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).sound(SoundType.AMETHYST)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
