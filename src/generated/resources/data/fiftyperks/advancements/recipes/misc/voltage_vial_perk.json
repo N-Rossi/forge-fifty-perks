@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_element_115_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fiftyperks:element_115_crystal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fiftyperks:voltage_vial_perk"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_element_115_crystal",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fiftyperks:voltage_vial_perk"
+    ]
+  },
+  "sends_telemetry_event": false
+}

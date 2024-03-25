@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "fiftyperks:empty_perk"
+    },
+    "E": {
+      "item": "fiftyperks:element_115_crystal"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    },
+    "X": {
+      "item": "minecraft:light_blue_dye"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "EBE",
+    " W "
+  ],
+  "result": {
+    "item": "fiftyperks:voltage_vial_perk"
+  },
+  "show_notification": true
+}

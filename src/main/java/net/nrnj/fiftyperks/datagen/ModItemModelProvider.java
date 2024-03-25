@@ -20,6 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         // Perk Items
         simpleItem(ModItems.EMPTY_PERK);
         simpleItem(ModItems.VOLTAGE_VIAL_PERK);
+        simpleItem(ModItems.JUGGERNOG_PERK);
 
         // Element 115 Items
         simpleItem(ModItems.RAW_ELEMENT_115);

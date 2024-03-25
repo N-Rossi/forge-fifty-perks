@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_block_of_element_115": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fiftyperks:block_of_element_115"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fiftyperks:element_115_crystal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_block_of_element_115",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fiftyperks:element_115_crystal"
+    ]
+  },
+  "sends_telemetry_event": false
+}
