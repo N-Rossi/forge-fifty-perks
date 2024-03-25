@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_element_115_crystal": {
+    "has_raw_element_115": {
       "conditions": {
         "items": [
           {
             "items": [
-              "fiftyperks:element_115_crystal"
+              "fiftyperks:raw_element_115"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fiftyperks:block_of_element_115"
+        "recipe": "fiftyperks:element_115_crystal_from_blasting_raw_element_115"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_element_115_crystal",
+      "has_raw_element_115",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "fiftyperks:block_of_element_115"
+      "fiftyperks:element_115_crystal_from_blasting_raw_element_115"
     ]
   },
   "sends_telemetry_event": false

@@ -27,13 +27,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(
                         ModBlocks.TEST_BLOCK.get(),
-                        ModBlocks.BLOCK_OF_ELEMENT_115.get()
+                        ModBlocks.BLOCK_OF_ELEMENT_115.get(),
+                        ModBlocks.ELEMENT_115_ORE.get(),
+                        ModBlocks.DEEPSLATE_ELEMENT_115_ORE.get()
+
                 ); // can add more blocks inside add method
 
         // similar for all other NEEDS_X_TOOL level
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(
-                        ModBlocks.BLOCK_OF_ELEMENT_115.get()
+                        ModBlocks.BLOCK_OF_ELEMENT_115.get(),
+                        ModBlocks.ELEMENT_115_ORE.get(),
+                        ModBlocks.DEEPSLATE_ELEMENT_115_ORE.get()
                 );
 
 

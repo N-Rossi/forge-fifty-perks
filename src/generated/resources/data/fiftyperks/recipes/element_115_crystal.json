@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "fiftyperks:block_of_element_115"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "fiftyperks:element_115_crystal"
+  }
+}

@@ -18,6 +18,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.TEST_BLOCK);
         blockWithItem(ModBlocks.BLOCK_OF_ELEMENT_115);
+        blockWithItem(ModBlocks.ELEMENT_115_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_ELEMENT_115_ORE);
         // add other modded blocks here
     }
 

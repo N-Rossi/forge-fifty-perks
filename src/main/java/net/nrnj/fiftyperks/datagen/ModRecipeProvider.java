@@ -20,7 +20,7 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
 
-//    private static final List<ItemLike> TEST_BLOCK_SMELTABLES = List.of(ModBlocks.TEST_BLOCK.get());
+    private static final List<ItemLike> ELEMENT_115_SMELTABLES = List.of(ModItems.RAW_ELEMENT_115.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -29,9 +29,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         // smelting (for future ore use)
-//        oreSmelting(pWriter, TEST_BLOCK_SMELTABLES, RecipeCategory.MISC, ModItems.EMPTY_PERK.get(), 0.25F, 100, "test");
+        oreSmelting(pWriter,
+                ELEMENT_115_SMELTABLES,
+                RecipeCategory.MISC,
+                ModItems.ELEMENT_115_CRYSTAL.get(),
+                0.25F, 100, "element_115");
+        oreBlasting(pWriter,
+                ELEMENT_115_SMELTABLES,
+                RecipeCategory.MISC,
+                ModItems.ELEMENT_115_CRYSTAL.get(),
+                0.25F, 50, "element_115");
 
         /** Shaped Recipes */
+        // Empty perk bottle
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EMPTY_PERK.get())
                 .pattern(" X ")
                 .pattern("X X")
@@ -39,19 +49,45 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', Blocks.GLASS.asItem())
                 .unlockedBy(getHasName(Blocks.GLASS), has(Blocks.GLASS))
                 .save(pWriter);
-
+        // Block of Element 115
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLOCK_OF_ELEMENT_115.get())
                 .pattern("XXX")
-                .pattern("X X")
                 .pattern("XXX")
-                .define('X', Items.GOLD_INGOT)
-                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                .pattern("XXX")
+                .define('X', ModItems.ELEMENT_115_CRYSTAL.get())
+                .unlockedBy(getHasName(ModItems.ELEMENT_115_CRYSTAL.get()), has(ModItems.ELEMENT_115_CRYSTAL.get()))
                 .save(pWriter);
 
-        // Shapeless Recipe
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TEST_BLOCK.get(), 4)
-                .requires(Blocks.DIRT.asItem())
-                .unlockedBy(getHasName(Blocks.DIRT), has(Blocks.DIRT.asItem()));
+        // Voltage Vial
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.VOLTAGE_VIAL_PERK.get())
+                .pattern("XXX")
+                .pattern("EBE")
+                .pattern(" W ")
+                .define('X', Items.LIGHT_BLUE_DYE)
+                .define('B', ModItems.EMPTY_PERK.get())
+                .define('E', ModItems.ELEMENT_115_CRYSTAL.get())
+                .define('W', Items.WATER_BUCKET)
+                .unlockedBy(getHasName(ModItems.ELEMENT_115_CRYSTAL.get()), has(ModItems.ELEMENT_115_CRYSTAL.get()))
+                .save(pWriter);
+        // Juggernog
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.JUGGERNOG_PERK.get())
+                .pattern("XGX")
+                .pattern("EBE")
+                .pattern(" W ")
+                .define('X', Items.RED_DYE)
+                .define('B', ModItems.EMPTY_PERK.get())
+                .define('E', ModItems.ELEMENT_115_CRYSTAL.get())
+                .define('W', Items.WATER_BUCKET)
+                .define('G', Items.GOLDEN_APPLE)
+                .unlockedBy(getHasName(ModItems.ELEMENT_115_CRYSTAL.get()), has(ModItems.ELEMENT_115_CRYSTAL.get()))
+                .save(pWriter);
+
+        /** Shapeless Recipe */
+        // TODO Shapeless recipe for block -> crystal not working
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ELEMENT_115_CRYSTAL.get(), 9)
+                .requires(ModBlocks.BLOCK_OF_ELEMENT_115.get())
+                .unlockedBy(getHasName(ModBlocks.BLOCK_OF_ELEMENT_115.get()), has(ModBlocks.BLOCK_OF_ELEMENT_115.get()))
+                .save(pWriter);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

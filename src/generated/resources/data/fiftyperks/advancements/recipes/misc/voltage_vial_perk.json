@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fiftyperks:block_of_element_115"
+        "recipe": "fiftyperks:voltage_vial_perk"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "fiftyperks:block_of_element_115"
+      "fiftyperks:voltage_vial_perk"
     ]
   },
   "sends_telemetry_event": false

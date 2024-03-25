@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "fiftyperks:empty_perk"
+    },
+    "E": {
+      "item": "fiftyperks:element_115_crystal"
+    },
+    "G": {
+      "item": "minecraft:golden_apple"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    },
+    "X": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "pattern": [
+    "XGX",
+    "EBE",
+    " W "
+  ],
+  "result": {
+    "item": "fiftyperks:juggernog_perk"
+  },
+  "show_notification": true
+}

@@ -29,6 +29,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.TEST_BLOCK.get());
         this.dropSelf(ModBlocks.BLOCK_OF_ELEMENT_115.get());
 
+        this.add(ModBlocks.DEEPSLATE_ELEMENT_115_ORE.get(),
+                block -> createCustomOreDrops(ModBlocks.DEEPSLATE_ELEMENT_115_ORE.get(), ModItems.RAW_ELEMENT_115.get()));
+        this.add(ModBlocks.ELEMENT_115_ORE.get(),
+                block -> createCustomOreDrops(ModBlocks.ELEMENT_115_ORE.get(), ModItems.RAW_ELEMENT_115.get()));
+
         // for custom ores
 //        this.add(ModBlocks.TEST_BLOCK.get(),
 //                block -> createCustomOreDrops(ModBlocks.TEST_BLOCK.get(), ModItems.EMPTY_PERK.get()));
