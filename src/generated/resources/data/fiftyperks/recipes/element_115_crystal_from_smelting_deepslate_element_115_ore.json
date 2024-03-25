@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "element_115",
+  "ingredient": {
+    "item": "fiftyperks:deepslate_element_115_ore"
+  },
+  "result": "fiftyperks:element_115_crystal"
+}

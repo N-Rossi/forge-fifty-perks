@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fiftyperks:item/quick_revive_perk"
+  }
+}

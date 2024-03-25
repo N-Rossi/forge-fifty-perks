@@ -8,23 +8,20 @@
     "E": {
       "item": "fiftyperks:block_of_element_115"
     },
-    "G": {
-      "item": "minecraft:golden_apple"
-    },
     "W": {
       "item": "minecraft:water_bucket"
     },
     "X": {
-      "item": "minecraft:red_dye"
+      "item": "minecraft:lapis_block"
     }
   },
   "pattern": [
-    "XGX",
+    "XXX",
     "EBE",
     " W "
   ],
   "result": {
-    "item": "fiftyperks:juggernog_perk"
+    "item": "fiftyperks:quick_revive_perk"
   },
   "show_notification": true
 }

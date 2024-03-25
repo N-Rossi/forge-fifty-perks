@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_block_of_element_115": {
+    "has_element_115_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "fiftyperks:block_of_element_115"
+              "fiftyperks:element_115_ore"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fiftyperks:juggernog_perk"
+        "recipe": "fiftyperks:element_115_crystal_from_smelting_element_115_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_block_of_element_115",
+      "has_element_115_ore",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "fiftyperks:juggernog_perk"
+      "fiftyperks:element_115_crystal_from_smelting_element_115_ore"
     ]
   },
   "sends_telemetry_event": false

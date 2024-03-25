@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_element_115_crystal": {
+    "has_block_of_element_115": {
       "conditions": {
         "items": [
           {
             "items": [
-              "fiftyperks:element_115_crystal"
+              "fiftyperks:block_of_element_115"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_element_115_crystal",
+      "has_block_of_element_115",
       "has_the_recipe"
     ]
   ],
