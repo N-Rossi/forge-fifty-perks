@@ -1,0 +1,4 @@
+// 1.20.1	2024-03-25T20:51:38.495559	Registries
+cd6bd445c2a8f8ec2782606bcd4064ad40d0011f data/fiftyperks/forge/biome_modifier/add_element_115_ore.json
+d9916ae43a3b786e2ed2c78cd6230176c667d43b data/fiftyperks/worldgen/configured_feature/element_115_ore.json
+9e4e1b110aa25b367578bda534a853a88c5d92dd data/fiftyperks/worldgen/placed_feature/element_115_placed.json

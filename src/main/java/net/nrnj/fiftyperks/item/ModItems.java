@@ -22,6 +22,7 @@ public class ModItems {
     public static final RegistryObject<Item> VOLTAGE_VIAL_PERK = ITEMS.register("voltage_vial_perk", () -> new Item(new Item.Properties().food(ModFoods.VOLTAGE_VIAL_PERK)));
 
     public static final RegistryObject<Item> JUGGERNOG_PERK = ITEMS.register("juggernog_perk", () -> new Item(new Item.Properties().food(ModFoods.JUGGERNOG_PERK)));
+    public static final RegistryObject<Item> QUICK_REVIVE_PERK = ITEMS.register("quick_revive_perk", () -> new Item(new Item.Properties().food(ModFoods.QUICK_REVIVE_PERK)));
 
 
     public static void register(IEventBus eventBus) {

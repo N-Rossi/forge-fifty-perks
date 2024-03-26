@@ -9,5 +9,6 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 0.1f).build();
     public static final FoodProperties JUGGERNOG_PERK = new FoodProperties.Builder().alwaysEat().nutrition(10).saturationMod(0.5f)
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 0.1f).build();
-
+    public static final FoodProperties QUICK_REVIVE_PERK = new FoodProperties.Builder().alwaysEat().nutrition(10).saturationMod(0.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 0.1f).build();
 }

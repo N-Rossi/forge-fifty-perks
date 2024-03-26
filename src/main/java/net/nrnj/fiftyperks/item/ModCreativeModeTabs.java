@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.EMPTY_PERK.get());
                         pOutput.accept(ModItems.VOLTAGE_VIAL_PERK.get());
                         pOutput.accept(ModItems.JUGGERNOG_PERK.get());
+                        pOutput.accept(ModItems.QUICK_REVIVE_PERK.get());
 
                         /** Other Items */
                         pOutput.accept(ModItems.RAW_ELEMENT_115.get());

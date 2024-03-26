@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fiftyperks:juggernog_perk"
+        "recipe": "fiftyperks:quick_revive_perk"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "fiftyperks:juggernog_perk"
+      "fiftyperks:quick_revive_perk"
     ]
   },
   "sends_telemetry_event": false
