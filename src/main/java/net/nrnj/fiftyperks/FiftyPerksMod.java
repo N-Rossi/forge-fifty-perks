@@ -1,6 +1,7 @@
 package net.nrnj.fiftyperks;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -15,8 +16,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.nrnj.fiftyperks.block.ModBlocks;
+import net.nrnj.fiftyperks.block.entity.ModBlockEntities;
 import net.nrnj.fiftyperks.item.ModCreativeModeTabs;
 import net.nrnj.fiftyperks.item.ModItems;
+import net.nrnj.fiftyperks.screen.ModMenuTypes;
+import net.nrnj.fiftyperks.screen.PerkFillingStationScreen;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -37,6 +41,8 @@ public class FiftyPerksMod
         /** Register */
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -69,6 +75,7 @@ public class FiftyPerksMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            MenuScreens.register(ModMenuTypes.PERK_FILLING_STATION_MENU.get(), PerkFillingStationScreen::new);
         }
     }
 }
