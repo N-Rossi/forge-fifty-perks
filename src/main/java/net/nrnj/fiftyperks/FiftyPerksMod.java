@@ -41,6 +41,7 @@ public class FiftyPerksMod
         /** Register */
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
