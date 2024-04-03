@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrnj.fiftyperks.FiftyPerksMod;
+import net.nrnj.fiftyperks.block.custom.PerkFillingStationBlock;
 import net.nrnj.fiftyperks.item.ModItems;
 
 import java.rmi.registry.Registry;
@@ -30,6 +31,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> DEEPSLATE_ELEMENT_115_ORE = registerBlock("deepslate_element_115_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_GOLD_ORE)));
+
+    public static final RegistryObject<Block> PERK_FILLING_STATION = registerBlock("perk_filling_station",
+            () -> new PerkFillingStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

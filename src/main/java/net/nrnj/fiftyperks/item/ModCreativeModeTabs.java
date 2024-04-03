@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ELEMENT_115_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_ELEMENT_115_ORE.get());
                         pOutput.accept(ModBlocks.BLOCK_OF_ELEMENT_115.get());
+                        pOutput.accept(ModBlocks.PERK_FILLING_STATION.get());
                     })
                     .build());
 
