@@ -3,6 +3,7 @@ package net.nrnj.fiftyperks.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.nrnj.fiftyperks.FiftyPerksMod;
@@ -20,6 +21,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BLOCK_OF_ELEMENT_115);
         blockWithItem(ModBlocks.ELEMENT_115_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_ELEMENT_115_ORE);
+
+        simpleBlockWithItem(ModBlocks.PERK_FILLING_STATION.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/perk_filling_station")));
         // add other modded blocks here
     }
 
