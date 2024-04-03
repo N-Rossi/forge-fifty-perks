@@ -129,9 +129,10 @@ public class PerkFillingStationBlockEntity extends BlockEntity implements MenuPr
             if(hasProgressFinished()) {
                 craftItem();
                 resetProgress();
-            } else {
-                resetProgress();
             }
+        }
+        else {
+            resetProgress();
         }
     }
 
