@@ -1,0 +1,12 @@
+{
+  "type": "fiftyperks:perk_filling",
+  "ingredients": [
+    {
+      "item": "fiftyperks:element_115_crystal"
+    }
+  ],
+  "output": {
+    "count": 7,
+    "item": "fiftyperks:juggernog_perk"
+  }
+}
