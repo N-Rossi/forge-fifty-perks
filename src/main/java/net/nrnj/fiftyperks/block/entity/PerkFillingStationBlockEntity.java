@@ -24,9 +24,13 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.nrnj.fiftyperks.block.custom.PerkFillingStationBlock;
 import net.nrnj.fiftyperks.item.ModItems;
+import net.nrnj.fiftyperks.recipe.PerkFillingRecipe;
 import net.nrnj.fiftyperks.screen.PerkFillingStationMenu;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import javax.swing.text.html.Option;
+import java.util.Optional;
 
 public class PerkFillingStationBlockEntity extends BlockEntity implements MenuProvider {
 
@@ -141,7 +145,9 @@ public class PerkFillingStationBlockEntity extends BlockEntity implements MenuPr
     }
 
     private void craftItem() {
-        ItemStack result = new ItemStack(ModItems.JUGGERNOG_PERK.get(), 1);
+        Optional<PerkFillingRecipe> recipe = getCurrentRecipe();
+        ItemStack result = recipe.get().getResultItem(null);
+
         this.itemHandler.extractItem(INPUT_SLOT1, 1, false);
 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
@@ -157,10 +163,22 @@ public class PerkFillingStationBlockEntity extends BlockEntity implements MenuPr
     }
 
     private boolean hasRecipe() {
-        boolean hasCraftingItem = this.itemHandler.getStackInSlot(INPUT_SLOT1).getItem() == ModItems.ELEMENT_115_CRYSTAL.get();
-        ItemStack result = new ItemStack(ModItems.JUGGERNOG_PERK.get());
+        Optional<PerkFillingRecipe> recipe = getCurrentRecipe();
 
-        return hasCraftingItem && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+        if(recipe.isEmpty()) {
+            return false;
+        }
+        ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
+
+        return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+    }
+
+    private Optional<PerkFillingRecipe> getCurrentRecipe() {
+        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+        for(int i =0; i < itemHandler.getSlots(); i++) {
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
+        }
+        return this.level.getRecipeManager().getRecipeFor(PerkFillingRecipe.Type.INSTANCE, inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {

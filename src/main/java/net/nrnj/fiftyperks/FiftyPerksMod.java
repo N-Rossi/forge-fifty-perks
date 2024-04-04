@@ -19,6 +19,7 @@ import net.nrnj.fiftyperks.block.ModBlocks;
 import net.nrnj.fiftyperks.block.entity.ModBlockEntities;
 import net.nrnj.fiftyperks.item.ModCreativeModeTabs;
 import net.nrnj.fiftyperks.item.ModItems;
+import net.nrnj.fiftyperks.recipe.ModRecipes;
 import net.nrnj.fiftyperks.screen.ModMenuTypes;
 import net.nrnj.fiftyperks.screen.PerkFillingStationScreen;
 import org.slf4j.Logger;
@@ -44,6 +45,7 @@ public class FiftyPerksMod
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
