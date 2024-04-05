@@ -3,10 +3,23 @@
   "ingredients": [
     {
       "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:coal_block"
+    },
+    {
+      "item": "minecraft:gold_block"
+    },
+    {
+      "item": "minecraft:coal_block"
+    },
+    {
+      "item": "minecraft:coal"
     }
+
   ],
   "output": {
-    "count": 7,
+    "count": 16,
     "item": "minecraft:diamond"
   }
 }

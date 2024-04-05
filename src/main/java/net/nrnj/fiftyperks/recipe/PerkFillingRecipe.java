@@ -32,7 +32,11 @@ public class PerkFillingRecipe implements Recipe<SimpleContainer> {
             return false;
         }
 
-        return inputItems.get(0).test(pContainer.getItem(0));
+        return inputItems.get(0).test(pContainer.getItem(0)) &&
+                inputItems.get(1).test(pContainer.getItem(1)) &&
+                inputItems.get(2).test(pContainer.getItem(2)) &&
+                inputItems.get(3).test(pContainer.getItem(3)) &&
+                inputItems.get(4).test(pContainer.getItem(4));
     }
 
     @Override
@@ -79,7 +83,7 @@ public class PerkFillingRecipe implements Recipe<SimpleContainer> {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe, "output"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(pSerializedRecipe, "ingredients");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY); // adjust with multiple inputs
+            NonNullList<Ingredient> inputs = NonNullList.withSize(5, Ingredient.EMPTY); // adjust with multiple inputs
 
             for(int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));

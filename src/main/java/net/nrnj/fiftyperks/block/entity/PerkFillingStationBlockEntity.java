@@ -34,9 +34,13 @@ import java.util.Optional;
 
 public class PerkFillingStationBlockEntity extends BlockEntity implements MenuProvider {
 
-    private final ItemStackHandler itemHandler = new ItemStackHandler(2);
+    private final ItemStackHandler itemHandler = new ItemStackHandler(6);
     private static final int INPUT_SLOT1 = 0;
-    private static final int OUTPUT_SLOT = 1;
+    private static final int INPUT_SLOT2 = 1;
+    private static final int INPUT_SLOT3 = 2;
+    private static final int INPUT_SLOT4 = 3;
+    private static final int INPUT_SLOT5 = 4;
+    private static final int OUTPUT_SLOT = 5;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
@@ -147,8 +151,13 @@ public class PerkFillingStationBlockEntity extends BlockEntity implements MenuPr
     private void craftItem() {
         Optional<PerkFillingRecipe> recipe = getCurrentRecipe();
         ItemStack result = recipe.get().getResultItem(null);
+        System.out.println("ITEM HANDLER LOG : " + itemHandler);
 
         this.itemHandler.extractItem(INPUT_SLOT1, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT2, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT3, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT4, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT5, 1, false);
 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));

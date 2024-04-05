@@ -1,33 +1,33 @@
-[03Apr2024 20:31:53.953] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\nick4\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, fiftyperks, --all, --output, D:\Minecraft Modding\mod-with-50-perks\forge-fifty-perks\src\generated\resources, --existing, D:\Minecraft Modding\mod-with-50-perks\forge-fifty-perks\src\main\resources]
-[03Apr2024 20:31:53.961] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[03Apr2024 20:31:54.205] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[03Apr2024 20:31:54.318] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/nick4/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[03Apr2024 20:31:54.872] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\nick4\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[03Apr2024 20:31:54.877] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\nick4\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[03Apr2024 20:31:54.882] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\nick4\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[03Apr2024 20:31:54.886] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\nick4\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
-[03Apr2024 20:31:55.051] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[03Apr2024 20:31:57.072] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\nick4\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, fiftyperks, --all, --output, D:\Minecraft Modding\mod-with-50-perks\forge-fifty-perks\src\generated\resources, --existing, D:\Minecraft Modding\mod-with-50-perks\forge-fifty-perks\src\main\resources]
-[03Apr2024 20:31:58.061] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [fiftyperks]
-[03Apr2024 20:32:03.486] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
-[03Apr2024 20:32:03.488] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
-[03Apr2024 20:32:03.878] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[03Apr2024 20:32:03.891] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 7.645 ms
-[03Apr2024 20:32:04.423] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/nick4/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[03Apr2024 20:32:04.424] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/nick4/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[03Apr2024 20:32:04.828] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[03Apr2024 20:32:04.942] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 111 ms
-[03Apr2024 20:32:04.942] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[03Apr2024 20:32:05.067] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 125 ms
-[03Apr2024 20:32:05.068] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: fiftyperks
-[03Apr2024 20:32:05.298] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: fiftyperks finished after 229 ms
-[03Apr2024 20:32:05.298] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: fiftyperks
-[03Apr2024 20:32:05.303] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: fiftyperks finished after 4 ms
-[03Apr2024 20:32:05.303] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id fiftyperks
-[03Apr2024 20:32:05.319] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id fiftyperks finished after 15 ms
-[03Apr2024 20:32:05.319] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id fiftyperks
-[03Apr2024 20:32:05.320] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id fiftyperks finished after 0 ms
-[03Apr2024 20:32:05.320] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[03Apr2024 20:32:05.340] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 20 ms
-[03Apr2024 20:32:05.341] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 513 ms
-[03Apr2024 20:32:05.351] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 54, old count: 54, new count: 55, removed stale: 0, written: 0
+[04Apr2024 22:40:59.416] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\nick4\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, fiftyperks, --all, --output, D:\Minecraft Modding\mod-with-50-perks\forge-fifty-perks\src\generated\resources, --existing, D:\Minecraft Modding\mod-with-50-perks\forge-fifty-perks\src\main\resources]
+[04Apr2024 22:40:59.439] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[04Apr2024 22:40:59.877] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[04Apr2024 22:40:59.980] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/nick4/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[04Apr2024 22:41:00.553] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\nick4\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[04Apr2024 22:41:00.558] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\nick4\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[04Apr2024 22:41:00.562] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\nick4\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[04Apr2024 22:41:00.566] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\nick4\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
+[04Apr2024 22:41:00.833] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[04Apr2024 22:41:03.125] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\nick4\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, fiftyperks, --all, --output, D:\Minecraft Modding\mod-with-50-perks\forge-fifty-perks\src\generated\resources, --existing, D:\Minecraft Modding\mod-with-50-perks\forge-fifty-perks\src\main\resources]
+[04Apr2024 22:41:04.209] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [fiftyperks]
+[04Apr2024 22:41:10.938] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
+[04Apr2024 22:41:10.939] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
+[04Apr2024 22:41:11.467] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[04Apr2024 22:41:11.505] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 28.89 ms
+[04Apr2024 22:41:12.146] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/nick4/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[04Apr2024 22:41:12.147] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/nick4/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[04Apr2024 22:41:12.623] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[04Apr2024 22:41:12.729] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 103 ms
+[04Apr2024 22:41:12.729] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[04Apr2024 22:41:12.912] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 182 ms
+[04Apr2024 22:41:12.913] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: fiftyperks
+[04Apr2024 22:41:13.062] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: fiftyperks finished after 148 ms
+[04Apr2024 22:41:13.062] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: fiftyperks
+[04Apr2024 22:41:13.067] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: fiftyperks finished after 4 ms
+[04Apr2024 22:41:13.067] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id fiftyperks
+[04Apr2024 22:41:13.079] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id fiftyperks finished after 11 ms
+[04Apr2024 22:41:13.079] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id fiftyperks
+[04Apr2024 22:41:13.080] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id fiftyperks finished after 0 ms
+[04Apr2024 22:41:13.080] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[04Apr2024 22:41:13.094] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 13 ms
+[04Apr2024 22:41:13.094] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 471 ms
+[04Apr2024 22:41:13.107] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 54, old count: 54, new count: 55, removed stale: 0, written: 0

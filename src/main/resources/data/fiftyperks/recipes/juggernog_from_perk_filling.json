@@ -2,11 +2,24 @@
   "type": "fiftyperks:perk_filling",
   "ingredients": [
     {
-      "item": "fiftyperks:element_115_crystal"
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "fiftyperks:block_of_element_115"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "fiftyperks:block_of_element_115"
+    },
+    {
+      "item": "minecraft:red_dye"
     }
+
   ],
   "output": {
-    "count": 7,
+    "count": 1,
     "item": "fiftyperks:juggernog_perk"
   }
 }

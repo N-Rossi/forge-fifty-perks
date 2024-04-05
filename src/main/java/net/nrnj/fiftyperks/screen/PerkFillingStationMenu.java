@@ -19,11 +19,11 @@ public class PerkFillingStationMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     public PerkFillingStationMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
+        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(5));
     }
     public PerkFillingStationMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.PERK_FILLING_STATION_MENU.get(), pContainerId);
-        checkContainerSize(inv, 2);
+        checkContainerSize(inv, 5);
         blockEntity = ((PerkFillingStationBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
@@ -33,8 +33,12 @@ public class PerkFillingStationMenu extends AbstractContainerMenu {
 
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 80, 11));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 80, 59));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 39, 31));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 58, 11));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 80, 11));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 102, 11));
+            this.addSlot(new SlotItemHandler(iItemHandler, 4, 121, 31));
+            this.addSlot(new SlotItemHandler(iItemHandler, 5, 80, 59));
         });
 
         addDataSlots(data);
@@ -123,6 +127,6 @@ public class PerkFillingStationMenu extends AbstractContainerMenu {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     /** THIS YOU HAVE TO DEFINE! */
-    private static final int TE_INVENTORY_SLOT_COUNT = 2;  // must be the number of slots you have!
+    private static final int TE_INVENTORY_SLOT_COUNT = 6;  // must be the number of slots you have!
 
 }
